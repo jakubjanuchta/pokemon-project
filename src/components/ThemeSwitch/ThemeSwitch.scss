@@ -1,0 +1,66 @@
+@import '../../variables/variables.scss';
+
+.theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+    &-wrapper {
+        position: absolute;
+        top: 30px;
+        right: 50px;
+        z-index: 1099;
+        display: flex;
+        align-items: center;
+        h4 {
+          margin-left: 10px;
+          font-size: 1rem;
+          @media(min-height: 1081px) and (min-width: 2200px){
+            font-size: 1.8rem;
+          }
+  
+          @media(min-height: 1700px) and (min-width: 2800px){
+            font-size: 2rem;
+          }
+          color: var(--text-color);
+        }
+      }
+    input {
+        display:none;
+        &:checked + .slider {
+            background-color: #66bb6a;
+        }
+        &:checked + .slider:before {
+            transform: translateX(26px);
+        }
+    }
+    .slider {
+        background-color: #ccc;
+        bottom: 0;
+        cursor: pointer;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: .4s;
+        &.round {
+            border-radius: 34px;
+            &:before {
+                border-radius: 50%;
+            }
+        }
+        &:before {
+            background-color: #fff;
+            bottom: 4px;
+            content: "";
+            height: 26px;
+            left: 4px;
+            position: absolute;
+            transition: .4s;
+            width: 26px;
+          }
+      }
+  }
+  
+  
+  

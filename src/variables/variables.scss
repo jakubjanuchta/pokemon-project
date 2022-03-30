@@ -1,0 +1,26 @@
+:root{
+    --base-color: #eb8f34;
+    --text-color: #000;
+    --background-color: #fff;
+    --elements-box-shadow: rgb(163,165,174);
+}
+
+[data-theme='light']{
+    --background-color: #fff;
+    --text-color: #000;
+    --base-color: #eb8f34;
+    --elements-box-shadow: rgb(163,165,174);
+}
+
+[data-theme='dark']{
+    --background-color: #000;
+    --text-color: #fff;
+    --base-color: #66bb6a;
+    --elements-box-shadow: rgb(80,80,80);
+}  
+    
+    
+    
+
+
+
